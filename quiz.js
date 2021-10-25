@@ -1423,7 +1423,6 @@ const setElementsUI = (state1, state2, ...el) => {
 };
 
 const modifyStyleUI = (el, fnCallBack, ...classListEl) => {
-  //1
   for (let i = 0; i < classListEl.length; i++) {
     el.classList[fnCallBack](classListEl[i]);
   }
@@ -1898,10 +1897,3 @@ const init = () => {
   clearSelectionUI(quizDifficulty, quizCategory);
   removeSelectionsUI(difficultyOptions);
 };
-
-/* Currently doing:
-TO DO:
-
-- remove timer and score display
-fix css
-*/
