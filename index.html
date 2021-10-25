@@ -1,0 +1,146 @@
+<!Doctype html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quiz App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./quiz.css">
+  <script src="https://kit.fontawesome.com/23d0d817ab.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+    <div class="info-bar__container">
+      <div class="quiz-info__bar">
+        <div class="quiz-info__cat"><span><i class="far fa-check-circle"></i> </span>Category: <span class="quiz-cat"></span></div>
+        <div class="quiz-info__dif"><span><i class="far fa-star"></i></span> Difficulty: <span class="quiz-dif"></span></div>
+      </div> 
+    </div>
+
+    <button class="cancel"><span><i class="far fa-times-circle times-circle"></i></span></button>
+    <div class="wrapper">
+      <div class="aside-left">
+        <button class="back"><span><i class="far fa-arrow-alt-circle-left"></i></span></button>
+      </div>
+
+      <div class="container">
+        <div class="category-container">
+          <div class="category-item item1" data_sports></div>
+          <div class="category-item item2" data_landmarks></div>
+          <div class="category-item item3" data_films></div>
+          <div class="item4 logo"></div>
+          <div class="category-item item5" data_wildlife></div>
+          <div class="category-item item6" data_nature></div>
+          <div class="category-item item7" data_history></div>
+        </div>
+        <div class="difficulty-container">
+          <div class="difficulty-item item1" data_easy></div>
+          <div class="difficulty-item item2" data_medium></div>
+          <div class="difficulty-item item3" data_hard></div>
+          <div class="bar">
+          <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="bar-card card1">
+            <div class="card">
+              <h3><span><i class='far fa-smile'></i></span></h3>
+              <h3>'Nice n Easy'</h3>
+              <p>You like to do things at your own pace.</p>
+            </div>
+          </div>
+          <div class="bar-card card2">
+            <div class="card">
+              <h3><span><i class="far fa-meh"></i></span></h3>
+              <h3>'Somewhere in ... the Middle'</h3>
+              <p>A good challenge...</p>
+            </div>
+          </div>
+          <div class="bar-card card3">
+            <div class="card">
+              <h3><span><i class='far fa-dizzy'></i></span></h3>
+              <h3>'Test of Time'</h3>
+              <p>Attempt it if you dare!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="aside-right">
+        <button class="continue"><span><i class="far fa-arrow-alt-circle-right"></i></span></button>
+      </div>
+    </div>
+
+    <div class="loader-container"></div>
+  
+      <div class="quiz-container">
+        <div class="nav-container">
+          <div class="nav">
+            <div class="nav-close close far active" aria-hidden="true">
+              <span class="fa-times-circle exit" aria-hidden="true"></span>
+            </div>
+            <div class="quiz-logo"></div>
+              <ul>
+                <li><span>0</span>/<span>0</span></li>
+                <li>00:00</li>
+              </ul>
+          </div>
+        </div>
+        <div class="question-title">
+          <p>What is the meaning of life?</p>
+        </div>
+        <div class="quiz-content">
+          <div class="answer-options">
+            <div class="answer">
+              <table><tbody><tr><td>Head</td></tr></tbody></table>
+            </div>
+            <div class="answer">
+              <table><tbody><tr><td>Shoulders</td></tr></tbody></table>
+            </div>
+            <div class="answer">
+              <table><tbody><tr><td>Knees</td></tr></tbody></table>
+            </div>
+            <div class="answer">
+              <table><tbody><tr><td>Toes</td></tr></tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="score-container">
+          <div class="result-label"><p>Quiz results:</p></div>
+          <progress-ring stroke="6" radius="120" progress="0"></progress-ring>
+          <emoji-icon stroke="6"></emoji-icon>
+          <div class="result-summary"><p></p></div>
+          <button class="play-again">Play Again?</button>
+        </div>
+      </div>
+    <!-- </div> -->
+
+    <div class="modal">
+      <div class="modal-content paper-background">
+        <div class="modal-close close far active" aria-hidden="true">
+          <span class="fa-times-circle" aria-hidden="true"></span>
+        </div>
+          <h3>You have selected:</h3>
+          <p>Quiz Category: <span class= mod-cat></span></p>
+          <p>Difficulty: <span class= mod-dif></span></p>
+          <button class="mod-confirm">Lets Go!</button>
+      </div>
+    </div>
+
+    <div class="exit-modal">
+      <div class="modal-content paper-background">
+        <div class="modal-close close far active" aria-hidden="true">
+          <span class="fa-times-circle" aria-hidden="true"></span>
+        </div>
+          <h3>Sure you want to quit?</h3>
+          <p>Click 'Confirm' to return to the Main Menu.</p>
+          <button class="exit-confirm">Confirm</button>
+      </div>
+    </div>
+
+  <script src="./quiz.js"></script>
+</body>
+</html>
