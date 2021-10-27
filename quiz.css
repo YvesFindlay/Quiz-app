@@ -607,7 +607,7 @@ body,
 }
 
 .quiz-container {
-  position: fixed;
+  position: relative; /* was fixed */
   padding: 0;
   background-image: linear-gradient(
       90deg,
@@ -852,7 +852,6 @@ button.play-again {
 }
 
 @media only screen and (max-width: 980px) {
-
   .info-bar__container .quiz-info__bar {
     width: 450px;
   }
@@ -865,14 +864,14 @@ button.play-again {
       "animal-wildlife films-cinema films-cinema"
       "landmarks landmarks sports"
       "history history history";
-      padding: 9rem 0 5rem;
-      height: 1000px;
-      gap: 3.5rem;
-      margin: 50% 0 10% 0;
+    padding: 9rem 0 5rem;
+    height: 1000px;
+    gap: 3.5rem;
+    margin: 50% 0 10% 0;
   }
 
   .container .difficulty-container {
-    padding:  0 0 1rem;
+    padding: 0 0 1rem;
     margin-top: 10rem;
     height: 100vh;
   }
@@ -936,7 +935,7 @@ button.play-again {
   }
 
   .aside-right {
-  right: 0;
+    right: 0;
   }
 
   .modal-content {
@@ -961,10 +960,9 @@ button.play-again {
       linear-gradient(#eee 0.1em, transparent 0.1em);
   }
 
-  .container .category-container { 
+  .container .category-container {
     padding: 18rem 0 3rem;
     height: 1300px;
-
   }
 
   .container .difficulty-container .difficulty-item,
@@ -1060,7 +1058,6 @@ button.play-again {
       "diff-hard"
       "diff-card-hard";
   }
-
 }
 
 @media only screen and (max-width: 538px) {
@@ -1192,7 +1189,7 @@ button.play-again {
     position: absolute;
     top: 100px;
   }
-  
+
   .aside-right {
     right: 0;
   }
@@ -1217,7 +1214,6 @@ button.play-again {
     margin: 0 0 12% 0;
     padding: 1rem 0;
   }
-  
 
   .answer-options {
     row-gap: 25px;
