@@ -607,7 +607,7 @@ body,
 }
 
 .quiz-container {
-  position: relative; /* was fixed before */
+  position: relative; /* was fixed */
   padding: 0;
   background-image: linear-gradient(
       90deg,
